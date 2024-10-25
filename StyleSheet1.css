@@ -1,0 +1,151 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3B6978;
+}
+
+h1 {
+    color: #84A9AC;
+    font-family: 'Trebuchet MS';
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+nav {
+    position: sticky;
+    top: 10px;
+}
+
+.undertext {
+    color: #CAE8D5;
+    text-align: center;
+    margin: auto;
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+}
+
+.nav-container {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: #204051;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+.navbar-font {
+    margin: inherit;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    color: #CAE8D5;
+
+}
+
+.button-projects {
+    text-decoration: none;
+    margin: inherit;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    color: #CAE8D5;
+}
+
+.image1 {
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.image2 {
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: auto;
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.image3 {
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 100px;
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.overmijtext {
+    color: #CAE8D5;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+}
+
+.overmijondertext {
+    color: #CAE8D5;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+}
+
+.image-text-container {
+    width: 800px;
+    margin: auto;
+    background-color: #204051;
+}
+
+.ervaring-container {
+    display: flex;
+}
+
+.ervaring-ondertext {
+    color: #CAE8D5;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+}
+
+.ervaring-text-container {
+    width: 800px;
+    margin: auto;
+    background-color: #204051;
+}
+
+.ervaring-headertext {
+    color: #CAE8D5;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+}
+
+.trailer {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 100px;
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.script-showcase-container {
+    margin-top:20px;
+    display: flex;
+}
