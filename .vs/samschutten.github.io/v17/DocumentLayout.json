@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\StyleSheet2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StyleSheet2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\projecten.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projecten.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\StyleSheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StyleSheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StyleSheet2.css",
-              "DocumentMoniker": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\StyleSheet2.css",
-              "RelativeDocumentMoniker": "StyleSheet2.css",
-              "ToolTip": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\StyleSheet2.css",
-              "RelativeToolTip": "StyleSheet2.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StyleSheet1.css",
+              "DocumentMoniker": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\StyleSheet1.css",
+              "RelativeDocumentMoniker": "StyleSheet1.css",
+              "ToolTip": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\StyleSheet1.css",
+              "RelativeToolTip": "StyleSheet1.css",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAK0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-25T10:06:30.011Z",
+              "WhenOpened": "2024-11-18T08:39:26.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "projecten.html",
+              "DocumentMoniker": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\projecten.html",
+              "RelativeDocumentMoniker": "projecten.html",
+              "ToolTip": "C:\\Users\\samsc\\Desktop\\Github Pages\\samschutten.github.io\\projecten.html",
+              "RelativeToolTip": "projecten.html",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAADkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-18T08:39:25.27Z",
               "EditorCaption": ""
             }
           ]
