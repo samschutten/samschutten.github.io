@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0000aa" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>404 - Skutn OS 95</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0000aa;
+        color: #fff;
+        font-family: "Lucida Console", "Courier New", Menlo, monospace;
+        font-size: clamp(14px, 2.1vw, 20px);
+        line-height: 1.5;
+        cursor: default;
+      }
+
+      main {
+        max-width: 42em;
+        padding: 24px;
+      }
+
+      h1 {
+        width: fit-content;
+        margin: 0 auto 1.5em;
+        padding: 0 0.5em;
+        background: #aaa;
+        color: #0000aa;
+        font-size: inherit;
+        font-weight: normal;
+      }
+
+      p {
+        margin: 0 0 1.2em;
+      }
+
+      ul {
+        margin: 0 0 1.6em;
+        padding: 0;
+        list-style: none;
+      }
+
+      li::before {
+        content: "*  ";
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .cursor {
+        animation: blink 1s steps(1) infinite;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .cursor {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Skutn OS 95</h1>
+      <p id="error"></p>
+      <ul>
+        <li id="key"></li>
+        <li id="ctrl"></li>
+      </ul>
+      <p class="center"><span id="continue"></span> <span class="cursor">_</span></p>
+    </main>
+    <script>
+      const texts = {
+        nl: {
+          error: 'Fatale fout 404 op adres 0028:C0FFEE95 in module SKUTN.VXD. De pagina die je zocht bestaat niet (en heeft misschien ook nooit bestaan).',
+          key: 'Druk op een toets om terug te gaan naar het bureaublad.',
+          ctrl: 'Druk op CTRL+ALT+DEL om je computer opnieuw op te starten. Grapje, dat doet hier helemaal niets.',
+          next: 'Druk op een toets om door te gaan',
+        },
+        de: {
+          error: 'Schwerer Ausnahmefehler 404 bei Adresse 0028:C0FFEE95 im Modul SKUTN.VXD. Die gesuchte Seite gibt es nicht (und gab es vielleicht auch nie).',
+          key: 'Drücke eine beliebige Taste, um zum Desktop zurückzukehren.',
+          ctrl: 'Drücke STRG+ALT+ENTF, um den Computer neu zu starten. Kleiner Scherz, das bewirkt hier gar nichts.',
+          next: 'Weiter mit beliebiger Taste',
+        },
+        en: {
+          error: 'Fatal exception 404 at address 0028:C0FFEE95 in module SKUTN.VXD. The page you were looking for does not exist (and maybe never did).',
+          key: 'Press any key to return to the desktop.',
+          ctrl: 'Press CTRL+ALT+DEL to restart your computer. Just kidding, that does absolutely nothing here.',
+          next: 'Press any key to continue',
+        },
+      }
+      let lang = 'nl'
+      try {
+        lang = localStorage.getItem('samos:language') || ''
+      } catch {
+        lang = ''
+      }
+      if (!texts[lang]) lang = 'nl'
+      const t = texts[lang]
+      document.documentElement.lang = lang
+      document.getElementById('error').textContent = t.error
+      document.getElementById('key').textContent = t.key
+      document.getElementById('ctrl').textContent = t.ctrl
+      document.getElementById('continue').textContent = t.next
+
+      const home = () => window.location.replace('/')
+      window.addEventListener('keydown', home)
+      window.addEventListener('pointerdown', home)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14022b"/>
+      <stop offset="45%" stop-color="#5a1466"/>
+      <stop offset="66%" stop-color="#ff6f3c"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#ff2975"/>
+    </linearGradient>
+    <mask id="cuts">
+      <rect width="1600" height="900" fill="#fff"/>
+      <g fill="#000">
+        <rect x="0" y="470" width="1600" height="4"/>
+        <rect x="0" y="500" width="1600" height="7"/>
+        <rect x="0" y="530" width="1600" height="10"/>
+        <rect x="0" y="560" width="1600" height="14"/>
+        <rect x="0" y="588" width="1600" height="20"/>
+      </g>
+    </mask>
+  </defs>
+  <rect width="1600" height="600" fill="url(#sky)"/>
+  <circle cx="800" cy="440" r="190" fill="url(#sun)" mask="url(#cuts)"/>
+  <rect y="600" width="1600" height="300" fill="#12002b"/>
+  <g stroke="#ff2bd6" stroke-width="2" opacity="0.85">
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="0" y1="612" x2="1600" y2="612"/>
+    <line x1="0" y1="628" x2="1600" y2="628"/>
+    <line x1="0" y1="650" x2="1600" y2="650"/>
+    <line x1="0" y1="680" x2="1600" y2="680"/>
+    <line x1="0" y1="720" x2="1600" y2="720"/>
+    <line x1="0" y1="772" x2="1600" y2="772"/>
+    <line x1="0" y1="840" x2="1600" y2="840"/>
+    <line x1="800" y1="600" x2="800" y2="900"/>
+    <line x1="760" y1="600" x2="400" y2="900"/>
+    <line x1="840" y1="600" x2="1200" y2="900"/>
+    <line x1="720" y1="600" x2="0" y2="900"/>
+    <line x1="880" y1="600" x2="1600" y2="900"/>
+    <line x1="680" y1="600" x2="-400" y2="900"/>
+    <line x1="920" y1="600" x2="2000" y2="900"/>
+    <line x1="640" y1="600" x2="-800" y2="900"/>
+    <line x1="960" y1="600" x2="2400" y2="900"/>
+    <line x1="600" y1="600" x2="-1200" y2="900"/>
+    <line x1="1000" y1="600" x2="2800" y2="900"/>
+  </g>
+</svg>
