@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="0.35" cy="0.75" r="1">
+      <stop offset="0" stop-color="#1d6b6a"/>
+      <stop offset="0.4" stop-color="#0f3b4a"/>
+      <stop offset="1" stop-color="#06141f"/>
+    </radialGradient>
+    <radialGradient id="light" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e9ffb8" stop-opacity="0.9"/>
+      <stop offset="0.3" stop-color="#9ff07a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#9ff07a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vine" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2fae6a"/>
+      <stop offset="0.5" stop-color="#9fe34a"/>
+      <stop offset="1" stop-color="#e6ff8a"/>
+    </linearGradient>
+    <linearGradient id="vine2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1b8ca6"/>
+      <stop offset="1" stop-color="#7ff0ff"/>
+    </linearGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8ff7a"/>
+      <stop offset="1" stop-color="#3aa652"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d3a32"/>
+      <stop offset="1" stop-color="#041512"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bokeh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+    <symbol id="lf" viewBox="-12 -40 24 40" overflow="visible">
+      <path d="M0 0 C -12 -10, -12 -28, 0 -40 C 12 -28, 12 -10, 0 0 Z" fill="url(#leafG)"/>
+      <path d="M0 -2 V-36" stroke="#2a7a3a" stroke-width="1"/>
+    </symbol>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="560" cy="640" r="460" fill="url(#light)" opacity="0.7"/>
+
+  <g filter="url(#bokeh)" fill="#d9ff9a">
+    <circle cx="1200" cy="200" r="22" opacity="0.25"/><circle cx="1340" cy="320" r="14" opacity="0.35"/>
+    <circle cx="1060" cy="120" r="30" opacity="0.15"/><circle cx="1460" cy="160" r="18" opacity="0.3"/>
+    <circle cx="300" cy="200" r="20" opacity="0.2"/><circle cx="180" cy="340" r="12" opacity="0.3"/>
+    <circle cx="880" cy="260" r="16" opacity="0.25"/><circle cx="1500" cy="460" r="26" opacity="0.2"/>
+  </g>
+  <g filter="url(#bokeh)" fill="#8ff6ff">
+    <circle cx="1280" cy="520" r="20" opacity="0.25"/><circle cx="1000" cy="380" r="12" opacity="0.3"/>
+    <circle cx="420" cy="120" r="16" opacity="0.25"/>
+  </g>
+
+  <!-- vines and spirals -->
+  <g fill="none" stroke-linecap="round" filter="url(#glow)">
+    <path d="M120 900 C 200 720, 360 640, 520 620 C 700 598, 820 520, 860 420 C 900 320, 840 240, 760 250 C 690 258, 670 330, 720 360 C 760 384, 800 350, 790 315" stroke="url(#vine)" stroke-width="10"/>
+    <path d="M520 620 C 640 560, 760 600, 860 660 C 980 730, 1120 700, 1180 600 C 1230 520, 1190 440, 1120 440 C 1060 440, 1040 500, 1080 530 C 1110 552, 1150 530, 1146 500" stroke="url(#vine)" stroke-width="7"/>
+    <path d="M300 900 C 320 800, 400 740, 480 730 C 560 720, 600 680, 600 640" stroke="url(#vine2)" stroke-width="5"/>
+    <path d="M860 420 C 960 360, 1080 330, 1180 280 C 1300 220, 1340 140, 1290 100 C 1250 70, 1200 100, 1210 140 C 1218 170, 1260 170, 1268 145" stroke="url(#vine2)" stroke-width="5"/>
+    <path d="M40 900 C 80 800, 160 760, 220 700 C 280 640, 260 560, 200 550 C 150 542, 130 600, 170 620" stroke="url(#vine)" stroke-width="6"/>
+    <path d="M1180 600 C 1260 640, 1380 640, 1460 580 C 1540 520, 1530 430, 1470 420 C 1420 412, 1400 470, 1440 490" stroke="url(#vine)" stroke-width="5"/>
+  </g>
+
+  <g>
+    <use href="#lf" x="618" y="560" width="24" height="40" transform="rotate(-40 630 600)"/>
+    <use href="#lf" x="842" y="620" width="24" height="40" transform="rotate(50 854 660)"/>
+    <use href="#lf" x="390" y="610" width="24" height="40" transform="rotate(-70 402 650)"/>
+    <use href="#lf" x="980" y="320" width="20" height="34" transform="rotate(30 990 354)"/>
+    <use href="#lf" x="1060" y="660" width="22" height="36" transform="rotate(-20 1071 696)"/>
+    <use href="#lf" x="240" y="680" width="22" height="36" transform="rotate(60 251 716)"/>
+    <use href="#lf" x="1320" y="600" width="20" height="34" transform="rotate(-50 1330 634)"/>
+    <use href="#lf" x="1120" y="250" width="20" height="34" transform="rotate(40 1130 284)"/>
+  </g>
+
+  <!-- glowing seeds -->
+  <g filter="url(#glow)">
+    <circle cx="790" cy="315" r="9" fill="#f6ffb8"/>
+    <circle cx="1146" cy="500" r="7" fill="#f6ffb8"/>
+    <circle cx="1268" cy="145" r="7" fill="#c9fbff"/>
+    <circle cx="170" cy="620" r="6" fill="#f6ffb8"/>
+    <circle cx="1440" cy="490" r="6" fill="#f6ffb8"/>
+    <circle cx="600" cy="640" r="5" fill="#c9fbff"/>
+  </g>
+
+  <!-- grass silhouette -->
+  <path d="M-20 900 V820 C 20 800, 30 760, 40 720 C 48 770, 60 800, 80 810 C 96 770, 100 730, 120 700 C 124 760, 140 800, 170 812 C 190 790, 200 760, 214 740 C 220 790, 240 812, 280 820 C 320 822, 380 830, 440 840 C 520 830, 600 846, 700 850 C 800 846, 900 856, 1000 852 C 1100 846, 1200 850, 1300 840 C 1340 820, 1360 780, 1380 750 C 1390 790, 1410 812, 1440 816 C 1460 790, 1470 760, 1490 730 C 1500 780, 1520 806, 1560 812 C 1580 780, 1590 760, 1620 740 V900 Z" fill="url(#grass)"/>
+</svg>

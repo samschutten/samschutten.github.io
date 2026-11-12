@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5fd2f2"/>
+      <stop offset="0.35" stop-color="#1c9ad6"/>
+      <stop offset="1" stop-color="#063f7a"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bub" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="0.88" stop-color="#bff3ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="far"><feGaussianBlur stdDeviation="3"/></filter>
+    <symbol id="b" viewBox="-50 -50 100 100">
+      <circle r="48" fill="url(#bub)"/>
+      <ellipse cx="-17" cy="-22" rx="15" ry="8" fill="#fff" opacity="0.8" transform="rotate(-30 -17 -22)"/>
+      <path d="M18 30a32 32 0 0 0 16-20" stroke="#fff" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="900" fill="url(#water)"/>
+  <g filter="url(#blur)">
+    <path d="M300 -20h120L200 900H40z" fill="url(#ray)"/>
+    <path d="M700 -20h90L640 900H520z" fill="url(#ray)" opacity="0.7"/>
+    <path d="M1100 -20h160L1100 900H900z" fill="url(#ray)"/>
+    <path d="M1450 -20h80L1400 900h-90z" fill="url(#ray)" opacity="0.6"/>
+  </g>
+  <g filter="url(#far)" opacity="0.6">
+    <use href="#b" x="120" y="620" width="40" height="40"/>
+    <use href="#b" x="460" y="200" width="30" height="30"/>
+    <use href="#b" x="980" y="700" width="36" height="36"/>
+    <use href="#b" x="1320" y="160" width="28" height="28"/>
+  </g>
+  <use href="#b" x="220" y="380" width="150" height="150"/>
+  <use href="#b" x="400" y="560" width="70" height="70"/>
+  <use href="#b" x="620" y="260" width="96" height="96"/>
+  <use href="#b" x="820" y="520" width="200" height="200"/>
+  <use href="#b" x="1100" y="300" width="80" height="80"/>
+  <use href="#b" x="1250" y="560" width="130" height="130"/>
+  <use href="#b" x="1420" y="380" width="60" height="60"/>
+  <use href="#b" x="560" y="700" width="44" height="44"/>
+  <use href="#b" x="80" y="160" width="64" height="64"/>
+</svg>

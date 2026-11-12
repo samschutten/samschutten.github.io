@@ -52,13 +52,20 @@
       .boot ul { padding-left: 18px; }
       .boot a { color: #00ffff; }
     </style>
-    <script type="module" crossorigin src="/assets/index-7m6vVP3N.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DXz66S-9.css">
+    <script type="module" crossorigin src="/assets/index-BaQUUBor.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CQrDYt18.css">
   </head>
   <body>
     <div id="app">
       <main class="boot">
-        <p>Skutn OS 95 wordt gestart...</p>
+        <p id="boot-line">Skutn OS 95 wordt gestart...</p>
+        <script>
+          try {
+            if (JSON.parse(localStorage.getItem('samos:v1') || '{}').version === '7') {
+              document.getElementById('boot-line').textContent = 'Skutn OS 7 wordt gestart...'
+            }
+          } catch {}
+        </script>
         <br />
         <h1>Sam Schutten – Software Developer in opleiding</h1>
         <p>Student Software Development aan het ROC van Twente in Enschede, uit Harreveld in de Achterhoek. Ik bouw games in Unity en C# en websites in Vue en Tailwind CSS, met veel oog voor design. Deze portfolio is gebouwd als een Windows 95-bureaublad.</p>

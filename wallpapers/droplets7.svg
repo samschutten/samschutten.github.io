@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="leaf" cx="0.35" cy="0.3" r="0.95">
+      <stop offset="0" stop-color="#d4f77a"/>
+      <stop offset="0.4" stop-color="#7cc83a"/>
+      <stop offset="1" stop-color="#1d5e18"/>
+    </radialGradient>
+    <radialGradient id="drop" cx="0.5" cy="0.62" r="0.55">
+      <stop offset="0" stop-color="#e9ffb8" stop-opacity="0.85"/>
+      <stop offset="0.6" stop-color="#9ae04c" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#235f12" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="vein" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="sh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <symbol id="d" viewBox="-50 -50 100 100">
+      <ellipse cx="4" cy="10" rx="40" ry="34" fill="#103d0b" opacity="0.35" filter="url(#sh)"/>
+      <ellipse rx="40" ry="34" fill="url(#drop)" stroke="#2f6f1a" stroke-opacity="0.35" stroke-width="1.5"/>
+      <ellipse cx="-14" cy="-14" rx="13" ry="7" fill="#fff" opacity="0.9" transform="rotate(-25 -14 -14)"/>
+      <ellipse cx="14" cy="20" rx="12" ry="4" fill="#f4ffd0" opacity="0.55"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="900" fill="url(#leaf)"/>
+  <g stroke="#e6ffb0" fill="none" filter="url(#vein)" opacity="0.55">
+    <path d="M-50 980C400 640 900 380 1700 -60" stroke-width="22"/>
+    <path d="M300 760C420 560 420 400 340 200M620 560C780 400 820 260 780 80M920 380C1120 300 1240 160 1260 -20M520 640C760 720 1000 760 1260 720M820 450C1060 520 1300 520 1560 460" stroke-width="9"/>
+  </g>
+  <use href="#d" x="260" y="250" width="150" height="150"/>
+  <use href="#d" x="520" y="520" width="90" height="90"/>
+  <use href="#d" x="860" y="200" width="220" height="220"/>
+  <use href="#d" x="1180" y="560" width="120" height="120"/>
+  <use href="#d" x="1380" y="250" width="70" height="70"/>
+  <use href="#d" x="180" y="640" width="60" height="60"/>
+  <use href="#d" x="700" y="700" width="46" height="46"/>
+  <use href="#d" x="1060" y="460" width="36" height="36"/>
+</svg>

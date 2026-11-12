@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1667c9"/>
+      <stop offset="0.45" stop-color="#5fb4ee"/>
+      <stop offset="0.75" stop-color="#bfe6fb"/>
+      <stop offset="1" stop-color="#e8f7ff"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.8" cy="0.12" r="0.35">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.15" stop-color="#fffbe0" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#fff6c8" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd25a"/>
+      <stop offset="1" stop-color="#3f9a2c"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bdf06a"/>
+      <stop offset="0.4" stop-color="#78c943"/>
+      <stop offset="1" stop-color="#2f8326"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bub" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="0.9" stop-color="#e8fbff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="haze" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+    <symbol id="b" viewBox="-50 -50 100 100">
+      <circle r="48" fill="url(#bub)"/>
+      <ellipse cx="-16" cy="-22" rx="16" ry="9" fill="#fff" opacity="0.75" transform="rotate(-30 -16 -22)"/>
+      <circle cx="20" cy="24" r="4" fill="#fff" opacity="0.6"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#sun)"/>
+  <g fill="#fff" filter="url(#blur)" opacity="0.85">
+    <ellipse cx="300" cy="220" rx="190" ry="40"/>
+    <ellipse cx="420" cy="190" rx="120" ry="45"/>
+    <ellipse cx="900" cy="300" rx="160" ry="30" opacity="0.7"/>
+    <ellipse cx="1100" cy="250" rx="110" ry="28" opacity="0.6"/>
+  </g>
+  <g fill="#fff" opacity="0.35">
+    <circle cx="1180" cy="260" r="26"/>
+    <circle cx="1060" cy="390" r="14"/>
+    <circle cx="980" cy="470" r="40" opacity="0.4"/>
+  </g>
+  <path d="M-50 640C220 520 520 540 760 600S1240 640 1650 520V900H-50z" fill="url(#far)" filter="url(#haze)"/>
+  <path d="M-50 720C260 600 640 640 920 700S1350 720 1650 640V900H-50z" fill="url(#near)"/>
+  <path d="M-50 720C260 600 640 640 920 700S1350 720 1650 640" fill="none" stroke="url(#rim)" stroke-width="4" filter="url(#soft)"/>
+  <use href="#b" x="180" y="330" width="90" height="90"/>
+  <use href="#b" x="300" y="460" width="46" height="46"/>
+  <use href="#b" x="1250" y="400" width="120" height="120"/>
+  <use href="#b" x="1400" y="300" width="56" height="56"/>
+  <use href="#b" x="700" y="420" width="64" height="64"/>
+  <use href="#b" x="560" y="300" width="32" height="32"/>
+</svg>

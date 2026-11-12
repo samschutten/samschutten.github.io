@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.42" r="0.8">
+      <stop offset="0" stop-color="#2a86d6"/>
+      <stop offset="0.35" stop-color="#1563b8"/>
+      <stop offset="0.7" stop-color="#0b4592"/>
+      <stop offset="1" stop-color="#062d66"/>
+    </radialGradient>
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#bfe8ff" stop-opacity="0.32"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+    <filter id="b20" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="b6" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g filter="url(#b20)">
+    <path d="M-100 760 C 300 620, 700 560, 1000 470 S 1500 260, 1750 160 L1750 300 C 1500 380, 1100 560, 800 640 S 200 820, -100 900 Z" fill="url(#streak)"/>
+    <path d="M-100 560 C 260 520, 640 470, 900 430 S 1400 420, 1750 470 L1750 520 C 1400 470, 1000 480, 820 500 S 220 600, -100 640 Z" fill="url(#streak)" opacity="0.7"/>
+  </g>
+  <g filter="url(#b6)" fill="none" stroke="#e6f7ff" stroke-linecap="round">
+    <path d="M-100 790 C 300 650, 700 590, 1000 500 S 1500 290, 1750 190" stroke-width="2.5" opacity="0.5"/>
+    <path d="M-100 600 C 260 560, 640 500, 900 460 S 1400 450, 1750 495" stroke-width="1.5" opacity="0.35"/>
+  </g>
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>
